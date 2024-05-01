@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'expo-status-bar'; //Importação
 import { StyleSheet, View } from 'react-native';
-import Title from './src/Components/Title';
-import Form from './src/Components/Form';
+import Title from './src/Componente/Title';
+import Form from './src/Componente/Form';
 
+export default function App() { //Função
 
-export default function App() {
   return (
     <View style={styles.container}>
-      <Title title="Meu Primeiro Formulário"></Title>
+
+      <Title title="Meu primeiro Formulário"></Title>
+
       <Form></Form>
+      
       <StatusBar style="auto" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({ //Estilo
   container: {
     flex: 1,
     backgroundColor: '#add8e6',

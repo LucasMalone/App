@@ -1,9 +1,9 @@
+import {View, Text} from "react-native-web";
 import React from "react";
-import { View, Text } from "react-native-web";
 
 export default function Resultado(props)
 {
-    return (
+    return(
         <View>
             <Text>{props.mensagem}</Text>
             <Text>{props.imc}</Text>
